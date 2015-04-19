@@ -40,13 +40,14 @@ static char	**parse(char *s)
   tab[words] = NULL;
   i = -1;
   j = -1;
-  while (s[++i]) {
-    if (!i || ((s[i - 1] == 0 || strchr(" -", s[i - 1]))
-	       && !strchr(" -", s[i])))
-      tab[++j] = s + i;
-    else if (strchr(" -", s[i]))
-      s[i] = 0;
-  }
+  while (s[++i])
+    {
+      if (!i || ((s[i - 1] == 0 || strchr(" -", s[i - 1]))
+		 && !strchr(" -", s[i])))
+	tab[++j] = s + i;
+      else if (strchr(" -", s[i]))
+	s[i] = 0;
+    }
   return (tab);
 }
 

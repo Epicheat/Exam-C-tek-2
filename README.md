@@ -1,6 +1,11 @@
 # Tek 2 - C exam
 
 If you are using this code in machine test, you can't have a note different of 21.  
+The script `cheatC.sh` will parse the subject and generate code for all the exercices.  
+Some subjects files are in `subjects` directory, they are real subjects used during real machine tests. You can use them to try the `cheatC.sh` script.
+
+## Use it in exam partition
+
 To use it during a test, you can simply do the following from your std partition:
 
 ```bash
@@ -15,15 +20,11 @@ rmdir /exam
 
 Then, during a test, all this code will be in **/cheat**
 
-### Exams content
+### Parser Usage
 
-Here are the composition of each test, in the same order as the subject
-
-* First exam : half_str, commont_str, infin_add, ord_alphlong, g-diam
-* Second exam : sopipa, hidenp, inter, msquare, my_md5
-* Third exam : rev_wstr, union, atoi_base, sort_word, g-nbr-ilots
-* Fourth exam : conv_nbr, my_id, rostring, infin_mult, count_island
-* Fifth exam : inter, wdmatch, sopipa, url_encode, g-diam
+```bash
+./cheatC.sh path/to/subject
+```
 
 ```
      _     FUCK YOU EPITECH    _
